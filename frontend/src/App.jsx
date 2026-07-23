@@ -10,7 +10,7 @@ import "quill/dist/quill.snow.css";
 
 Quill.register("modules/cursors",QuillCursors);
 
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://contentshareroom.onrender.com";
 
 function App() {
   const [userName, setUserName] = useState("");
