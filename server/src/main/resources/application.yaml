@@ -1,5 +1,10 @@
 spring:
   application:
     name: server
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/pulsepad
 
-
+jwt:
+  secret: UHVsc2VQYWRTdXBlclNlY3JldEtleTIwMjZGb3JKV1RBdXRoZW50aWNhdGlvbg==
+  expiration: 86400000

@@ -1,19 +1,21 @@
 package com.codecollab.server.Element;
 
+import java.util.List;
+
 public class EditorMessage {
-    private String content;
+    private List<Integer> content;
 
     public EditorMessage(){};
 
-    public EditorMessage(String content) {
+    public EditorMessage(List<Integer> content) {
         this.content = content;
     }
 
-    public String getContent() {
+    public List<Integer> getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(List<Integer> content) {
         this.content = content;
     }
 }
