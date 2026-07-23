@@ -126,7 +126,7 @@ function App() {
 
 
     const client = new Client({
-      brokerURL: `ws://${new URL(API_BASE).host}/ws`,
+      brokerURL: `wss://${new URL(API_BASE).host}/ws`,
 
       onConnect: () => {
         console.log(`Connected to room: ${roomId}`);
