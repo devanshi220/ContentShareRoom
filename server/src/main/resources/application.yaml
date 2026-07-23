@@ -3,8 +3,11 @@ spring:
     name: server
   data:
     mongodb:
-      uri: mongodb://localhost:27017/pulsepad
+      uri: mongodb+srv://devanshivijay:Devanshi15@cluster0.obuxesc.mongodb.net/pulsepad?retryWrites=true&w=majority
 
 jwt:
   secret: UHVsc2VQYWRTdXBlclNlY3JldEtleTIwMjZGb3JKV1RBdXRoZW50aWNhdGlvbg==
   expiration: 86400000
+
+server:
+  port: ${PORT:8080}  
