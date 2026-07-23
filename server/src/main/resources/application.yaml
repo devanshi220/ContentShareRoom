@@ -1,13 +1,12 @@
 spring:
   application:
     name: server
-  data:
-    mongodb:
-      uri: mongodb+srv://devanshivijay:Devanshi15@cluster0.obuxesc.mongodb.net/pulsepad?retryWrites=true&w=majority
+  mongodb:
+    uri: ${MONGODB_URI:mongodb://localhost:27017/pulsepad}
 
 jwt:
-  secret: UHVsc2VQYWRTdXBlclNlY3JldEtleTIwMjZGb3JKV1RBdXRoZW50aWNhdGlvbg==
-  expiration: 86400000
+  secret: ${JWT_SECRET}
+  expiration: ${JWT_EXPIRATION:86400000}
 
 server:
-  port: ${PORT:8080}  
+  port: ${PORT:8080}
